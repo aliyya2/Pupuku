@@ -6,10 +6,10 @@ import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-@Entity(tableName = "tire_table")
-data class Tire (
+@Entity(tableName = "fertilizer_table")
+data class Fertilizer (
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
-    val name: String
+    val name: String,
     val address: String
         ) : Parcelable
