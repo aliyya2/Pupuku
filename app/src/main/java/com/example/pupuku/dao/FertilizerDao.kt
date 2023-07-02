@@ -11,13 +11,13 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface FertilizerDao {
     @Query("SELECT * FROM 'Fertilizer_table' ORDER BY name ASC")
-    fun getAllTire(): Flow<List<Fertilizer>>
+    fun getAllFertilizer(): Flow<List<Fertilizer>>
 
     @Insert
-    suspend fun insertTire(fertilizer: Fertilizer)
+    suspend fun insertFertilizer(fertilizer: Fertilizer)
 
     @Delete
-    suspend fun deleteTire(fertilizer: Fertilizer)
+    suspend fun deleteFertilizer(fertilizer: Fertilizer)
 
-    @Update fun updateTire(fertilizer: Fertilizer)
+    @Update fun updateFertilizer(fertilizer: Fertilizer)
 }
