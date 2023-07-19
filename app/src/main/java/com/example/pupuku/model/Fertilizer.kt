@@ -13,4 +13,6 @@ data class Fertilizer (
     val name: String,
     val address: String,
     val type: String,
+    val latitude: Double?,
+    val longitude: Double?
         ) : Parcelable
